@@ -16,7 +16,7 @@ export const AppWrapper = ({ children }) => {
 };
 
 
-export const useFormContext = () => {
+export const useAppContext = () => {
   return useContext(AppContext);
 };
 
