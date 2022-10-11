@@ -2,7 +2,7 @@ import { createContext, useContext } from "react";
 
 const AppContext = createContext();
 
-export const AppWrapper = ({ children }) => {
+export const FormWrapper = ({ children }) => {
   let sharedState = {
     //state here
   };
