@@ -4,6 +4,17 @@ import useAppContext from "../../context/state";
 const Stepper = () => {
   const { activeStepIndex } = useAppContext();
 
+  useEffect(() => {
+    const stepperItems = document.querySelectorAll(".stepper-item");
+    stepperItems.forEach((step, i) => {
+      if (i <= activeStepIndex) {
+        step.classList.add("bg-indigo-500", "text-white");
+      } else {
+        step.classList.remove("bg-indigo-500", "text-white");
+      }
+    });
+  }, [activeStepIndex]);
+
   return (
     <div className="w-2/3 flex flex-row items-center justify-center px-32 py-16">
       <div className="stepper-item w-8 h-8 text-center font-medium border-2 rounded-full">
