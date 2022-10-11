@@ -12,7 +12,7 @@ function Step() {
       stepContent = <BasicForm />;
       break;
     case 1:
-      stepContent = <Workspace />;
+      stepContent = <Workspace/>;
       break;
     case 2:
       stepContent = <Success />;

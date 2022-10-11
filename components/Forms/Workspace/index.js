@@ -4,8 +4,8 @@ import * as yup from "yup";
 
 import useAppContext from "../../context/state";
 
-function Workspace() {
-    const { activeStepIndex, setActiveStepIndex, formData, setFormData } =
+const WorkspaceForm = () => {
+  const { activeStepIndex, setActiveStepIndex, formData, setFormData } =
     useAppContext();
 
   const renderError = (message) => (
@@ -58,6 +58,6 @@ function Workspace() {
       </Form>
     </Formik>
   );
-}
+};
 
-export default Workspace;
+export default WorkspaceForm;
