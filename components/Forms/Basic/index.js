@@ -1,11 +1,12 @@
 import { ErrorMessage, Field, Form, Formik } from "formik";
-import React, { useContext } from "react";
-import { FormContext } from "../../../App";
+import React from "react";
 import * as yup from "yup";
+
+import useAppContext from "../../context/state";
 
 const BasicForm = () => {
   const { activeStepIndex, setActiveStepIndex, formData, setFormData } =
-    useContext(FormContext);
+    useAppContext();
 
   const renderError = (message) => (
     <p className="italic text-red-600">{message}</p>
@@ -58,6 +59,6 @@ const BasicForm = () => {
       </Form>
     </Formik>
   );
-}
+};
 
-export default BasicFrom;
+export default BasicForm;
