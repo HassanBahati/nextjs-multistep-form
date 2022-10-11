@@ -1,10 +1,10 @@
-// Step.js
 import React, { useContext } from "react";
 import { FormContext } from "../../App";
-import { Basic, Success, Workspace } from "../Forms";
 import BasicForm from "../Forms/Basic";
+import Success from "../Forms/Success";
+import WorkspaceForm from "../Forms/Workspace";
 
-function Step() {
+const Step = () => {
   const { activeStepIndex } = useContext(FormContext);
   let stepContent;
   switch (activeStepIndex) {
@@ -12,7 +12,7 @@ function Step() {
       stepContent = <BasicForm />;
       break;
     case 1:
-      stepContent = <Workspace/>;
+      stepContent = <WorkspaceForm />;
       break;
     case 2:
       stepContent = <Success />;
@@ -22,6 +22,6 @@ function Step() {
   }
 
   return stepContent;
-}
+};
 
 export default Step;
