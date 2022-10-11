@@ -15,8 +15,8 @@ export const AppWrapper = ({ children }) => {
   );
 };
 
-
-export const useAppContext = () => {
+const useAppContext = () => {
   return useContext(AppContext);
 };
 
+export default useAppContext;
