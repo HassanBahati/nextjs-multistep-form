@@ -8,10 +8,10 @@ export const FormWrapper = ({ children }) => {
   };
 
   return (
-    <FormContext.Provider value={sharedState}>{children}</FormContext.Provider>
+    <AppContext.Provider value={sharedState}>{children}</AppContext.Provider>
   );
 };
 
 export const useFormContext = () => {
-  return useContext(FormContext);
+  return useContext(AppContext);
 };
