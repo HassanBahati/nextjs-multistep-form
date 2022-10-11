@@ -2,10 +2,10 @@ import { ErrorMessage, Field, Form, Formik } from "formik";
 import React from "react";
 import * as yup from "yup";
 
-import useAppContext from "../../context/state";
+import useAppContext from "../../../context/state";
 
 const WorkspaceForm = () => {
-  const { activeStepIndex, setActiveStepIndex, formData, setFormData } =
+    const { activeStepIndex, setActiveStepIndex, formData, setFormData } =
     useAppContext();
 
   const renderError = (message) => (
@@ -58,6 +58,6 @@ const WorkspaceForm = () => {
       </Form>
     </Formik>
   );
-};
+}
 
 export default WorkspaceForm;

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Step from "../components/Step";
 import Stepper from "../components/Stepper/index";
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       </Head>
       <div className="w-screen h-screen flex flex-col items-center justify-start">
         <Stepper />
+        <Step />
       </div>
     </div>
   );
