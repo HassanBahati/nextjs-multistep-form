@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import { FormContext } from "../../../App";
 import * as yup from "yup";
 
-const BasicForm = () = {
+const BasicForm = () => {
   const { activeStepIndex, setActiveStepIndex, formData, setFormData } =
     useContext(FormContext);
 
