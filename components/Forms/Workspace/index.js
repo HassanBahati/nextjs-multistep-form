@@ -1,11 +1,12 @@
 import { ErrorMessage, Field, Form, Formik } from "formik";
-import React, { useContext } from "react";
-import { FormContext } from "../../../App";
+import React from "react";
 import * as yup from "yup";
 
+import useAppContext from "../../context/state";
+
 function Workspace() {
-  const { activeStepIndex, setActiveStepIndex, formData, setFormData } =
-    useContext(FormContext);
+    const { activeStepIndex, setActiveStepIndex, formData, setFormData } =
+    useAppContext();
 
   const renderError = (message) => (
     <p className="italic text-red-600">{message}</p>
