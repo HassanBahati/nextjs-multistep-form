@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import { FormContext } from "../../../App";
 import * as yup from "yup";
 
-function Basic() {
+const BasicForm = () = {
   const { activeStepIndex, setActiveStepIndex, formData, setFormData } =
     useContext(FormContext);
 
@@ -60,4 +60,4 @@ function Basic() {
   );
 }
 
-export default Basic;
+export default BasicFrom;
