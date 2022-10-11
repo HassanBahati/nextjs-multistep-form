@@ -1,11 +1,11 @@
 import "../styles/globals.css";
-import { FormWrapper } from "../context/state";
+import { AppWrapper } from "../context/state";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <FormWrapper>
+    <AppWrapper>
       <Component {...pageProps} />
-    </FormWrapper>
+    </AppWrapper>
   );
 }
 
