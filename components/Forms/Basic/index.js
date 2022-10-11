@@ -1,4 +1,3 @@
-// Basic.js
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import React, { useContext } from "react";
 import { FormContext } from "../../../App";
