@@ -16,7 +16,7 @@ const Stepper = () => {
   }, [activeStepIndex]);
 
   return (
-    <div className="w-2/3 flex flex-row items-center justify-center px-32 py-16">
+    <div className="w-2/3 flex flex-col items-center justify-center px-32 py-16">
       <div className="stepper-item w-8 h-8 text-center font-medium border-2 rounded-full">
         1
       </div>
